@@ -22,22 +22,66 @@ namespace LogicaNegocio.Implementacion
 
         public bool delUsuarios_PA(Usuarios pUsuarios)
         {
-            throw new NotImplementedException();
+            bool lObjRespuesta = false;
+            try
+            {
+                lObjRespuesta = ousuariosAD.delUsuarios_PA(pUsuarios);
+            }
+            catch (Exception ex)
+            {
+
+                gobjLogger.Error("Se produjo un error. Detalle " + ex.Message + " " + ex.InnerException.Message);
+                throw ex;
+            }
+            return lObjRespuesta;
         }
 
         public bool insUsuarios_PA(Usuarios pUsuarios)
         {
-            throw new NotImplementedException();
+            bool lObjRespuesta = false;
+            try
+            {
+                lObjRespuesta = ousuariosAD.insUsuarios_PA(pUsuarios);
+            }
+            catch (Exception ex)
+            {
+
+                gobjLogger.Error("Se produjo un error. Detalle " + ex.Message + " " + ex.InnerException.Message);
+                throw ex;
+            }
+            return lObjRespuesta;
         }
 
         public bool modUsuarios_PA(Usuarios pUsuarios)
         {
-            throw new NotImplementedException();
+            bool lObjRespuesta = false;
+            try
+            {
+                lObjRespuesta = ousuariosAD.modUsuarios_PA(pUsuarios);
+            }
+            catch (Exception ex)
+            {
+
+                gobjLogger.Error("Se produjo un error. Detalle " + ex.Message + " " + ex.InnerException.Message);
+                throw ex;
+            }
+            return lObjRespuesta;
         }
 
         public List<PA_ListadoUsuarios_Result> recUsuarios_PA()
         {
-            throw new NotImplementedException();
+            List<PA_ListadoUsuarios_Result> lObjRespuesta = new List<PA_ListadoUsuarios_Result>();
+            try
+            {
+                lObjRespuesta = ousuariosAD.recUsuarios_PA();
+            }
+            catch (Exception ex)
+            {
+
+                gobjLogger.Error("Se produjo un error. Detalle " + ex.Message + " " + ex.InnerException.Message);
+                throw ex;
+            }
+            return lObjRespuesta;
         }
     }
 }

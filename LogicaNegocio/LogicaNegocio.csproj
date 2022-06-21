@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Implementacion\UsuariosLN.cs" />
     <Compile Include="Interfaces\IUsuariosLN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

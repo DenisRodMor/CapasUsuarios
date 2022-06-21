@@ -72,7 +72,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Implementacion\UsuariosAD.cs" />
     <Compile Include="Interfaces\IUsuariosAD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
