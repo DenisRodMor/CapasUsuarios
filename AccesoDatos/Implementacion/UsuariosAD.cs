@@ -1,15 +1,13 @@
-﻿using Entidades;
-using Microsoft.Extensions.Logging;
+﻿using AccesoDatos.Interfaces;
+using Entidades;
 using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AccesoDatos.Implementacion
 {
-   public class UsuariosAD
+    public class UsuariosAD : IUsuariosAD
     {
 
         private readonly Logger gobjLogger = LogManager.GetCurrentClassLogger();
@@ -96,6 +94,11 @@ namespace AccesoDatos.Implementacion
                 throw ex;
             }
             return lObjRespuesta;
+        }
+
+        public bool delUsuarios_PA(Usuarios pUsuarios)
+        {
+            throw new NotImplementedException();
         }
     }
 }
