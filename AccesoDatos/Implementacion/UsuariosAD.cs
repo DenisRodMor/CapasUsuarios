@@ -76,5 +76,26 @@ namespace AccesoDatos.Implementacion
             }
             return lObjRespuesta;
         }
+
+        public bool delPacientes_PA(Usuarios pUsuarios)
+        {
+            bool lObjRespuesta = false;
+            int intValor = 0;
+
+            try
+            {
+                intValor = gObjContextoUser.PA_EliminarUsuario(pUsuarios.Id);
+                if (intValor == 1)
+                {
+                    lObjRespuesta = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                gobjLogger.Error("Se produjo un error. Detalle " + ex.Message + " " + ex.InnerException.Message);
+                throw ex;
+            }
+            return lObjRespuesta;
+        }
     }
 }
