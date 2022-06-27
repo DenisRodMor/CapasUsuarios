@@ -18,7 +18,7 @@ namespace AccesoDatos.Implementacion
             gObjContextoUser = lgObjContextoUser;
         }
 
-        public List<PA_ListadoUsuarios_Result> recUsuarios_PA()
+        public List<PA_ListadoUsuarios_Result> recUsuarios_PA() 
         {
             List<PA_ListadoUsuarios_Result> lObjRespuesta = new List<PA_ListadoUsuarios_Result>();
             try
@@ -75,7 +75,7 @@ namespace AccesoDatos.Implementacion
             return lObjRespuesta;
         }
 
-        public bool delPacientes_PA(Usuarios pUsuarios)
+        public bool delUsuarios_PA(Usuarios pUsuarios)
         {
             bool lObjRespuesta = false;
             int intValor = 0;
@@ -96,9 +96,6 @@ namespace AccesoDatos.Implementacion
             return lObjRespuesta;
         }
 
-        public bool delUsuarios_PA(Usuarios pUsuarios)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
