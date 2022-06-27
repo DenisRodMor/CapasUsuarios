@@ -38,11 +38,11 @@ namespace WebApi.Controllers
             return lObjRespuesta;
         }
 
-        
+
 
         // POST api/<UsuariosController>
         [HttpPost]
-        public  ActionResult insUsuarios_PA([FromBody] Usuarios pUsuarios)
+        public ActionResult insUsuarios_PA([FromBody] Usuarios pUsuarios)
         {
 
             if (ModelState.IsValid)
